@@ -3,7 +3,7 @@ spring:
     name: kafka-practice
 
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: localhost:39092
     consumer:
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
