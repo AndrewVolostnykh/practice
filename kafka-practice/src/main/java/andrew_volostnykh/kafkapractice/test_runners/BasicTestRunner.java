@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class BasicTestRunner
 	implements CommandLineRunner {
@@ -16,8 +16,8 @@ public class BasicTestRunner
 	@Override
 	public void run(String... args) {
 		producer.send(
-			KafkaTopicsDeclaration.BASIC_PRACTICE_TOPIC,
-			"Basic Practice Message"
+			KafkaTopicsDeclaration.GROUPS_PRACTICE_TOPIC,
+			"To be duplicated for 2 groups message"
 		);
 	}
 }
